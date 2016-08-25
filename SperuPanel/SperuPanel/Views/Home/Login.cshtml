@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body class="login-body">
+    <div class="container">
+        <header class="panel-heading">
+
+            <!-- <button class="btn-primary" style="float: right"><a href="<?php echo base_url()?>index.php/User_Contrller/add_post">Add Post</a></button> -->
+        </header>
+        <form class="form-signin" method="POST" action="/Home/AccountValidation">
+            <h2 class="form-signin-heading">sign in now</h2>
+            <div class="login-wrap">
+                <input type="text" class="form-control" name="name" placeholder="User ID" autofocus>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Remember me
+                    <span class="pull-right">
+                        <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
+                    </span>
+                </label>
+                <button class="btn btn-lg btn-login btn-block" type="submit">Sign in</button>
+                <p>or you can sign in via social network</p>
+                
+                
+            </div>
+            <!-- Modal -->
+            
+            <!-- modal -->
+        </form>
+
+    </div>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
